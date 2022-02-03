@@ -1,11 +1,7 @@
 import {
     Children,
     cloneElement,
-    FC, JSXElementConstructor,
-    PropsWithChildren,
     ReactElement,
-    ReactNode,
-    SetStateAction,
     useEffect,
     useState
 } from 'react';
@@ -22,7 +18,8 @@ export const Carousel = ({children}: CarouselProps): JSX.Element => {
                 return cloneElement(child, {
                     style: {
                         height: "100%",
-                        width: "100%"
+                        minWidth:'100%',
+                        maxWidth: "100%"
                     }
                 });
             })
