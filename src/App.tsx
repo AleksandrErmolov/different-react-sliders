@@ -4,7 +4,7 @@ import {Carousel} from "./component/Carousel/Carousel";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <h1>Slider Div</h1>
         <Carousel>
             <div className="item item-1">item 1</div>
